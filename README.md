@@ -103,23 +103,33 @@ bankapi/
       
 ### ⚙️ How to Run the Project
 -1.Clone the repository
+
    git clone <repository-url>
    cd bankapi
+   
 -2.Create a virtual environment
    python -m venv venv
+   
 -3.Activate the virtual environment
    Windows:
       venv\Scripts\activate
    Linux / macOS:
       source venv/bin/activate
+      
 -3.Install dependencies
    pip install -r requirements.txt
+   
 -4.Apply database migrations
    python manage.py migrate
+   
 -5.Load bank and branch data from CSV
+
    python manage.py load_csv
+   
 -6.Run the development server
+
    python manage.py runserver
+   
 -8.Access the APIs
    GET /api/banks/
    GET /api/banks/{bank_id}/branches/
@@ -136,6 +146,7 @@ Approximately 4–5 hours.
 
 Django was chosen because it provides a robust, secure, and scalable backend framework with built-in support for ORM, migrations, and admin tooling, which makes managing relational data like banks and branches straightforward.
 Django REST Framework (DRF) was selected to implement RESTful APIs efficiently.
+
 DRF offers:
       - Clean and structured API development
       - Powerful serializers for converting model data to JSON
