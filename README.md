@@ -41,29 +41,22 @@ bankapi/
 ```
 ## 📂 Directory & File Explanation
 
-*`manage.py`
-   Django command-line utility used to run the development server, apply migrations, and execute custom management commands.
-*`db.sqlite3`
-   SQLite database used for local development and testing.
-*`requirements.txt`
-   Contains all Python dependencies required to run the project.
-*`bankapi/`
-   Main Django project configuration directory.
-*`settings.py` – Global project settings and configurations
-*`urls.py` – Root URL routing for the project
-*`asgi.py / wsgi.py` – Deployment configuration files
-*`banks/`
-   Django application responsible for bank and branch-related logic.
-*`models.py` – Bank and Branch database models
-*`serializers.py` – Django REST Framework serializers
-*`views.py` – API logic and request handling
-*`urls.py` – App-level API routes
-*`admin.py` – Django admin panel configuration
-*`management/commands/load_csv.py` – Custom Django command to load bank and branch data from CSV
-*`data/`
-   Contains the CSV dataset used to populate the database.
-*`venv/`
-   Python virtual environment used only for local development (not included in version control).
+* `manage.py` :-  Django command-line utility used to run the development server, apply migrations, and execute custom management commands.
+* `db.sqlite3` :-   SQLite database used for local development and testing.
+* `requirements.txt` :-   Contains all Python dependencies required to run the project.
+* `bankapi/` :-   Main Django project configuration directory.
+* `settings.py` :- Global project settings and configurations
+* `urls.py` :- Root URL routing for the project
+* `asgi.py / wsgi.py` :- Deployment configuration files
+* `banks/` :-   Django application responsible for bank and branch-related logic.
+* `models.py` – Bank and Branch database models
+* `serializers.py` :- Django REST Framework serializers
+* `views.py` :- API logic and request handling
+* `urls.py` :- App-level API routes
+* `admin.py` :- Django admin panel configuration
+* `management/commands/load_csv.py` :-Custom Django command to load bank and branch data from CSV
+* `data/` :-   Contains the CSV dataset used to populate the database.
+* `venv/` :-  Python virtual environment used only for local development (not included in version control).
 
 ## Tech Stack
 - Python
@@ -143,10 +136,10 @@ Approximately 4–5 hours.
 
 Django was chosen because it provides a robust, secure, and scalable backend framework with built-in support for ORM, migrations, and admin tooling, which makes managing relational data like banks and branches straightforward.
 Django REST Framework (DRF) was selected to implement RESTful APIs efficiently. DRF offers:
-     `*` Clean and structured API development
-     `*`  Powerful serializers for converting model data to JSON
-     `*` Generic views that reduce boilerplate code
-     `*`  Built-in support for REST best practices
+       * Clean and structured API development
+       *Powerful serializers for converting model data to JSON
+       *  Generic views that reduce boilerplate code
+       *  Built-in support for REST best practices
 
 Using Django with DRF ensures:
    `*` Maintainable and readable code
