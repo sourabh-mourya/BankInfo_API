@@ -58,11 +58,9 @@ GET /api/branches/{ifsc}/
 2. Create virtual environment
    python -m venv venv
 3. Activate virtual environment
-4. Install dependencies
-   pip install -r requirements.txt
-5. Run migrations
+4. Run migrations
    python manage.py migrate
-6. Start server
+5. Start server
    python manage.py runserver
 
 ## Data Source
