@@ -64,7 +64,7 @@ bankapi/
 - Django REST Framework
 - SQLite (default)
 
-### 🔗 API Endpoints
+### 🔗 API ENDPOINTS
 
 
 ## Get All Banks
@@ -101,7 +101,7 @@ bankapi/
       }
 
       
-###⚙️ How to Run the Project
+### ⚙️ How to Run the Project
 1.Clone the repository
    git clone <repository-url>
    cd bankapi
@@ -136,15 +136,15 @@ Approximately 4–5 hours.
 
 Django was chosen because it provides a robust, secure, and scalable backend framework with built-in support for ORM, migrations, and admin tooling, which makes managing relational data like banks and branches straightforward.
 Django REST Framework (DRF) was selected to implement RESTful APIs efficiently. DRF offers:
-       * Clean and structured API development
-       *Powerful serializers for converting model data to JSON
-       *  Generic views that reduce boilerplate code
-       *  Built-in support for REST best practices
+      - Clean and structured API development
+      - Powerful serializers for converting model data to JSON
+      -  Generic views that reduce boilerplate code
+      - Built-in support for REST best practices
 
 Using Django with DRF ensures:
-   `*` Maintainable and readable code
-   `*` Proper separation of concerns
-   `*` Fast development while adhering to industry standards
+  - Maintainable and readable code
+  - Proper separation of concerns
+  -Fast development while adhering to industry standards
 
 This stack is well-suited for building production-grade REST APIs and aligns perfectly with the requirements of the assignment.
 
