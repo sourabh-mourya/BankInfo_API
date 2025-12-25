@@ -7,35 +7,35 @@ It exposes endpoints to fetch bank and branch details.
 ## Project Structure
 bankapi/
 │
-├── manage.py                     # Django management entry point
-├── db.sqlite3                    # SQLite database
-├── requirements.txt              # Project dependencies
+├── manage.py
+├── db.sqlite3
+├── requirements.txt
 │
-├── bankapi/                      # Django project configuration
+├── bankapi/
 │   ├── __init__.py
-│   ├── settings.py               # Global settings
-│   ├── urls.py                   # Root URL configuration
-│   ├── asgi.py                   # ASGI config
-│   └── wsgi.py                   # WSGI config
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
 │
-├── banks/                        # Django app (Banks & Branches)
+├── banks/
 │   ├── __init__.py
-│   ├── admin.py                  # Admin registrations
-│   ├── apps.py                   # App config
-│   ├── models.py                 # Bank & Branch models
-│   ├── serializers.py            # DRF serializers
-│   ├── views.py                  # API views
-│   ├── urls.py                   # App-level routes
-│   ├── migrations/               # Database migrations
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── views.py
+│   ├── urls.py
+│   ├── migrations/
 │   │   └── __init__.py
 │   └── management/
 │       └── commands/
-│           └── load_csv.py        # Custom CSV loader command
+│           └── load_csv.py
 │
 ├── data/
-│   └── bank_branches.csv         # CSV dataset
+│   └── bank_branches.csv
 │
-└── venv/                         # Virtual environment (local only)
+└── venv/# Virtual environment (local only)
 
 ## Tech Stack
 - Python
