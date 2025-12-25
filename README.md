@@ -6,7 +6,6 @@ It exposes endpoints to fetch bank and branch details.
 
 ## Project Structure
 bankapi/
-│
 ├── manage.py
 ├── db.sqlite3
 ├── requirements.txt
@@ -35,8 +34,7 @@ bankapi/
 ├── data/
 │   └── bank_branches.csv
 │
-└── venv/# Virtual environment (local only)
-
+└── venv/   # Virtual environment (local only)
 ## Tech Stack
 - Python
 - Django
