@@ -119,6 +119,7 @@ python manage.py runserver
 - `GET /api/banks/`
 - `GET /api/banks/{bank_id}/branches/`
 - `GET /api/branches/{ifsc}/`
+- 
 
 ## 🔗 API Endpoints
 
@@ -140,6 +141,11 @@ GET /api/banks/
 GET /api/banks/{bank_id}/branches/
 ```
 
+**Example:**
+```
+GET /api/banks/1/branches/
+```
+
 **Response Example:**
 ```json
 {
@@ -151,6 +157,11 @@ GET /api/banks/{bank_id}/branches/
 ### 3. Get Branch Details by IFSC
 ```
 GET /api/branches/{ifsc}/
+```
+
+**Example:**
+```
+GET /api/branches/SBIN0000001/
 ```
 
 **Response Example:**
