@@ -102,25 +102,25 @@ bankapi/
 
       
 ### ⚙️ How to Run the Project
-1.Clone the repository
+-1.Clone the repository
    git clone <repository-url>
    cd bankapi
-2.Create a virtual environment
+-2.Create a virtual environment
    python -m venv venv
-3.Activate the virtual environment
+-3.Activate the virtual environment
    Windows:
       venv\Scripts\activate
    Linux / macOS:
       source venv/bin/activate
-3.Install dependencies
+-3.Install dependencies
    pip install -r requirements.txt
-4.Apply database migrations
+-4.Apply database migrations
    python manage.py migrate
-5.Load bank and branch data from CSV
+-5.Load bank and branch data from CSV
    python manage.py load_csv
-6.Run the development server
+-6.Run the development server
    python manage.py runserver
-8.Access the APIs
+-8.Access the APIs
    GET /api/banks/
    GET /api/banks/{bank_id}/branches/
    GET /api/branches/{ifsc}/
@@ -135,16 +135,17 @@ Approximately 4–5 hours.
 ### Why Django + Django REST Framework Was Chosen
 
 Django was chosen because it provides a robust, secure, and scalable backend framework with built-in support for ORM, migrations, and admin tooling, which makes managing relational data like banks and branches straightforward.
-Django REST Framework (DRF) was selected to implement RESTful APIs efficiently. DRF offers:
+Django REST Framework (DRF) was selected to implement RESTful APIs efficiently.
+DRF offers:
       - Clean and structured API development
       - Powerful serializers for converting model data to JSON
-      -  Generic views that reduce boilerplate code
+      - Generic views that reduce boilerplate code
       - Built-in support for REST best practices
 
 Using Django with DRF ensures:
   - Maintainable and readable code
   - Proper separation of concerns
-  -Fast development while adhering to industry standards
+  - Fast development while adhering to industry standards
 
 This stack is well-suited for building production-grade REST APIs and aligns perfectly with the requirements of the assignment.
 
