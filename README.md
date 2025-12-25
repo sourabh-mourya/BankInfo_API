@@ -6,30 +6,36 @@ It exposes endpoints to fetch bank and branch details.
 
 ## Project Structure
 bankapi/
-├── bankapi/                  # Main Django project configuration
-│   ├── settings.py           # Project settings
-│   ├── urls.py               # Root URL configuration
-│   ├── asgi.py               # ASGI config
-│   └── wsgi.py               # WSGI config
 │
-├── banks/                    # Django app handling bank & branch logic
-│   ├── management/
-│   │   └── commands/
-│   │       └── load_csv.py   # Custom management command to load CSV data
-│   ├── migrations/           # Database migrations
-│   ├── models.py             # Bank and Branch models
-│   ├── serializers.py        # DRF serializers
-│   ├── views.py              # API views
-│   ├── urls.py               # App-level API routes
-│   └── admin.py              # Admin configuration
+├── manage.py                     # Django management entry point
+├── db.sqlite3                    # SQLite database
+├── requirements.txt              # Project dependencies
+│
+├── bankapi/                      # Django project configuration
+│   ├── __init__.py
+│   ├── settings.py               # Global settings
+│   ├── urls.py                   # Root URL configuration
+│   ├── asgi.py                   # ASGI config
+│   └── wsgi.py                   # WSGI config
+│
+├── banks/                        # Django app (Banks & Branches)
+│   ├── __init__.py
+│   ├── admin.py                  # Admin registrations
+│   ├── apps.py                   # App config
+│   ├── models.py                 # Bank & Branch models
+│   ├── serializers.py            # DRF serializers
+│   ├── views.py                  # API views
+│   ├── urls.py                   # App-level routes
+│   ├── migrations/               # Database migrations
+│   │   └── __init__.py
+│   └── management/
+│       └── commands/
+│           └── load_csv.py        # Custom CSV loader command
 │
 ├── data/
-│   └── bank_branches.csv     # Dataset used to populate the database
+│   └── bank_branches.csv         # CSV dataset
 │
-├── db.sqlite3                # SQLite database (local development)
-├── manage.py                 # Django management entry point
-└── venv/                     # Python virtual environment
-
+└── venv/                         # Virtual environment (local only)
 
 ## Tech Stack
 - Python
