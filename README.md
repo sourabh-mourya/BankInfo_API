@@ -1,7 +1,3 @@
-# BankInfo_API
-
-
-
 # Bank API in Python
 
 ## Overview
