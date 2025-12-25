@@ -70,6 +70,56 @@ Django application responsible for bank and branch-related logic:
 - Django REST Framework
 - SQLite (default)
 
+## ⚙️ How to Run the Project
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/sourabh-mourya/BankInfo_API.git
+cd bankapi
+
+```
+
+### 2. Create a virtual environment
+```bash
+python -m venv venv
+```
+
+### 3. Activate the virtual environment
+**Windows:**
+```bash
+venv\Scripts\activate
+```
+
+**Linux / macOS:**
+```bash
+source venv/bin/activate
+```
+
+### 4. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 5. Apply database migrations
+```bash
+python manage.py migrate
+```
+
+### 6. Load bank and branch data from CSV
+```bash
+python manage.py load_csv
+```
+
+### 7. Run the development server
+```bash
+python manage.py runserver
+```
+
+### 8. Access the APIs
+- `GET /api/banks/`
+- `GET /api/banks/{bank_id}/branches/`
+- `GET /api/branches/{ifsc}/`
+
 ## 🔗 API Endpoints
 
 ### 1. Get All Banks
@@ -115,54 +165,8 @@ GET /api/branches/{ifsc}/
 }
 ```
 
-## ⚙️ How to Run the Project
+---
 
-### 1. Clone the repository
-```bash
-git clone <repository-url>
-cd bankapi
-```
-
-### 2. Create a virtual environment
-```bash
-python -m venv venv
-```
-
-### 3. Activate the virtual environment
-**Windows:**
-```bash
-venv\Scripts\activate
-```
-
-**Linux / macOS:**
-```bash
-source venv/bin/activate
-```
-
-### 4. Install dependencies
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Apply database migrations
-```bash
-python manage.py migrate
-```
-
-### 6. Load bank and branch data from CSV
-```bash
-python manage.py load_csv
-```
-
-### 7. Run the development server
-```bash
-python manage.py runserver
-```
-
-### 8. Access the APIs
-- `GET /api/banks/`
-- `GET /api/banks/{bank_id}/branches/`
-- `GET /api/branches/{ifsc}/`
 
 ## 📊 Data Source
 Bank and branch data is loaded from a CSV file (`bank_branches.csv`) using a custom Django management command.
