@@ -5,6 +5,14 @@ This project is a RESTful API built using Django and Django REST Framework.
 It exposes endpoints to fetch bank and branch details.
 
 ## Project Structure
+.
+├── src
+│   ├── index.html
+│   ├── index.js
+│   ├── styles.css
+│   └── assets
+│       └── images
+└── package.json
 bankapi/
 │
 ├── manage.py
