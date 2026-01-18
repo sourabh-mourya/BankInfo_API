@@ -204,6 +204,4 @@ Django REST Framework (DRF) was selected to implement RESTful APIs efficiently.
 
 This stack is well-suited for building production-grade REST APIs and aligns perfectly with the requirements of the assignment.
 
-## 📝 Notes
-- Clean REST architecture followed
-- Proper relational mapping between Bank and Branch models
+
