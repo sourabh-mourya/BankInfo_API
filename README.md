@@ -6,7 +6,7 @@ This project is a RESTful API built using Django and Django REST Framework. It e
 ## 📁 Project Structure
 ```
 bankapi/
-│
+│ 
 ├── manage.py
 ├── db.sqlite3
 ├── requirements.txt
